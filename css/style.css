@@ -1,7 +1,131 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('../fonts/NetflixSansRegular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Netflix-light';
+    src: url('../fonts/NetflixSansLight.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--cor-textos);
+    background-color: var(--bg-color);
+}
+
 :root {
     --fonte: 'Netflix Sans', sans-serif;
-
+    --bg-color: #0e0d0d;
     --cor-fundo: #0078ff;
     --cor-destaque: #e50914;
     --cor-textos: #737373;
+    --border-color: #222;
+    --fonte-light: 'Netflix-light', sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+header.cabecalho {
+    padding: .6em 5% 1em;
+}
+
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.cabecalho>nav.menu .netflix-logo {
+    max-width: 80px;
+}
+
+nav.menu a.btn-signin {
+    background-color: var(--cor-destaque);
+    color: white;
+    padding: .3em .5em;
+    border-radius: 3px;
+    font-size: .7em;
+
+    font-family: var(--fonte-light);
+}
+
+section.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.4em 5% 1em;
+}
+
+.destaque-title {
+
+    text-align: center;
+    color: white;
+    margin-bottom: .5em;
+}
+
+.destaque p {
+    font-size: .9em;
+}
+
+.destaque-info {
+    text-align: center;
+    color: white;
+    margin-bottom: .8em;
+}
+
+label {
+    display: none;
+}
+
+.destaque-message {
+    max-width: 230px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-bottom: .3em;
+}
+
+form.form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.email {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-started {
+    margin: .7em auto;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-family: var(--fonte-light);
+    font-weight: 200;
+
+    cursor: pointer;
+
+}
+
+.btn-started:active {
+    transition: background-color 1s ease;
+    background-color: #93080f;
 }
