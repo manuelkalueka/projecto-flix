@@ -20,7 +20,7 @@
 
 :root {
     --fonte: 'Netflix Sans', sans-serif;
-    --bg-color: #0e0d0d;
+    --bg-color: #000000;
     --cor-fundo: #0078ff;
     --cor-destaque: #e50914;
     --cor-textos: #737373;
@@ -30,6 +30,11 @@
 
 body {
     font-family: var(--fonte);
+}
+
+h2 {
+    text-align: center;
+    color: white;
 }
 
 header.cabecalho {
@@ -51,28 +56,34 @@ nav.menu a.btn-signin {
     color: white;
     padding: .3em .5em;
     border-radius: 3px;
-    font-size: .7em;
+    font-size: .8em;
 
     font-family: var(--fonte-light);
 }
 
-section.destaque {
+section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 1.4em 5% 1em;
+    border-bottom: 5px solid var(--border-color)
 }
 
-.destaque-title {
+section.destaque {}
 
-    text-align: center;
-    color: white;
+.destaque-title {
     margin-bottom: .5em;
 }
 
-.destaque p {
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    text-align: center;
     font-size: .9em;
+    font-weight: lighter;
 }
 
 .destaque-info {
@@ -115,6 +126,7 @@ form.form {
     border-radius: 3px;
     border: none;
     outline: none;
+    margin-bottom: 3.4em;
     padding: 10px;
     background-color: var(--cor-destaque);
     color: white;
@@ -129,3 +141,31 @@ form.form {
     transition: background-color 1s ease;
     background-color: #93080f;
 }
+
+section.tv {
+    padding-top: 3em;
+}
+
+section h2.tv-title {
+    margin-bottom: .5em;
+}
+
+section h3.tv-info {
+    color: white;
+    width: 250px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+div.img-tv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 2.5em;
+}
+
+section.tv div.img-tv img {
+    width: 100%;
+}
+
