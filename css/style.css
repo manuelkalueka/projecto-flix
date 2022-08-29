@@ -16,6 +16,7 @@
     text-decoration: none;
     color: var(--cor-textos);
     background-color: var(--bg-color);
+
 }
 
 :root {
@@ -67,7 +68,8 @@ section {
     justify-content: center;
     flex-direction: column;
     padding: 1.4em 5% 1em;
-    border-bottom: 5px solid var(--border-color)
+
+    border-bottom: 8px solid var(--border-color)
 }
 
 section.destaque {}
@@ -96,15 +98,16 @@ label {
     display: none;
 }
 
-.destaque-message {
-    max-width: 230px;
+.destaque-message, .destaque-message-foot {
+    width: 200px;
     margin: auto;
     text-align: center;
+    font-weight: normal;
     color: white;
     margin-bottom: .3em;
 }
 
-form.form {
+form.form, form.form-member-foot {
     display: flex;
     flex-wrap: wrap;
 
@@ -169,3 +172,85 @@ section.tv div.img-tv img {
     width: 100%;
 }
 
+section.download-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.download-info {
+    width: 250px;
+    margin-top: .8em;
+    font-size: 1em;
+    color: white;
+}
+
+.download-container .img-download>img {
+    width: 300px;
+}
+
+div.img-download {
+    position: relative;
+}
+
+div.img-download div.panel-title {
+    position: absolute;
+    width: 250px;
+    top: 79%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+
+    background-color: var(--bg-color);
+    border: 2px solid var(--cor-textos);
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.422);
+}
+
+div.panel-title p#panel-title {
+    color: white;
+    text-align: center;
+}
+
+div.panel-title p#down-status {
+    font-size: .8em;
+    color: var(--cor-fundo);
+    font-weight: lighter;
+    text-indent: 50px;
+}
+
+section.watch {
+    padding-top: 3em;
+    padding-bottom: 3.3em;
+}
+
+section.watch h3.watch-info {
+    margin-top: .8em;
+    color: white;
+    width: 257px;
+}
+
+section.kids-profile {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.kids-info {
+    margin-top: .8em;
+    width: 250px;
+    color: white;
+}
+
+.img-kids img {
+    width: 100%;
+}
+
+section.asks {
+    padding-top: 3em;
+}
+
+section.asks h2.asks-title {
+    margin-bottom: .8em;
+}
