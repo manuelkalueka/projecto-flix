@@ -98,7 +98,8 @@ label {
     display: none;
 }
 
-.destaque-message, .destaque-message-foot {
+.destaque-message,
+.destaque-message-foot {
     width: 200px;
     margin: auto;
     text-align: center;
@@ -107,7 +108,8 @@ label {
     margin-bottom: .3em;
 }
 
-form.form, form.form-member-foot {
+form.form,
+form.form-member-foot {
     display: flex;
     flex-wrap: wrap;
 
