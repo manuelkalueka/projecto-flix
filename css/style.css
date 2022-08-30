@@ -268,7 +268,7 @@ ul.questions-list li.questions-item {
     margin-bottom: .5em;
 }
 
-ul.questions-list li.questions-item > button {
+ul.questions-list li.questions-item>button {
     position: relative;
     border: 0;
     outline: none;
@@ -297,7 +297,7 @@ div.closed {
     display: none;
 }
 
-div.aswer { 
+div.aswer {
     margin-top: .1em;
     background-color: #303030;
 }
@@ -305,7 +305,7 @@ div.aswer {
 span.text {
     display: block;
     background-color: transparent;
-    color:white;
+    color: white;
     padding-top: 1em;
     padding-bottom: 1em;
     margin: auto;
