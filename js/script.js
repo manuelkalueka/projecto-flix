@@ -17,5 +17,3 @@ btnQuestions.addEventListener('click', () => {
     }
 
 });
-
-console.log(aswerElement);
