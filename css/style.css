@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
     color: var(--cor-textos);
     background-color: var(--bg-color);
@@ -123,7 +124,7 @@ form.form-member-foot {
     color: black;
     height: 40px;
     width: 100%;
-    padding: 5px;
+    padding: 25px;
 }
 
 .btn-started {
@@ -249,10 +250,65 @@ section.kids-profile {
     width: 100%;
 }
 
-section.asks {
+section.quest {
     padding-top: 3em;
 }
 
-section.asks h2.asks-title {
+section.quest h2.quest-title {
     margin-bottom: .8em;
+}
+
+ul.questions-list {
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+ul.questions-list li.questions-item {
+    width: 100vw;
+    margin-bottom: .5em;
+}
+
+ul.questions-list li.questions-item > button {
+    position: relative;
+    border: 0;
+    outline: none;
+
+    width: 100%;
+    padding: .8em 2.2em .8em 1.2em;
+    background-color: #303030;
+
+    font-size: 1em;
+    color: white;
+    text-align: left;
+}
+
+button span.icon {
+    position: absolute;
+    background-color: transparent;
+    color: inherit;
+    left: 90%;
+    transform: translate(-50%, -30%);
+    font-family: var(--fonte-light);
+    font-size: 1.5em;
+}
+
+
+div.closed {
+    display: none;
+}
+
+div.aswer { 
+    margin-top: .1em;
+    background-color: #303030;
+}
+
+span.text {
+    display: block;
+    background-color: transparent;
+    color:white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    margin-bottom: .5em;
+    width: 90%;
 }
