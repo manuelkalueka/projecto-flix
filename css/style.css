@@ -312,3 +312,14 @@ span.text {
     margin-bottom: .5em;
     width: 90%;
 }
+
+footer.footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1.4em 5% 1em;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
