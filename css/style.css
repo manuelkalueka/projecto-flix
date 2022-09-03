@@ -314,12 +314,35 @@ span.text {
 }
 
 footer.footer {
-        display: flex;
-        flex-direction: column;
-        padding: 1.4em 5% 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em 10% 1em;
+}
+
+.footer__top-link {
+    padding-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .footer a:hover {
     text-decoration: underline;
     transition: 1s;
+}
+
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+}
+
+.footer-links .footer-link-item {
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 148px;
+    vertical-align: top;
+    width: 25%;
+}
+
+.a-country {
+    padding: 2em 0 1em;
+    font-size: 13px;
 }
